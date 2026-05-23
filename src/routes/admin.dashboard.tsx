@@ -180,13 +180,13 @@ function AdminDashboard() {
               <h3 className="text-base font-bold text-slate-900">Recent Activity</h3>
               <ul className="mt-5 space-y-4">
                 {[
-                  { t: "New service request from Maria Santos", time: "5 min ago", c: "sky" },
-                  { t: "Job REQ-1040 marked as completed", time: "1 hr ago", c: "emerald" },
-                  { t: "Customer Anna Reyes updated profile", time: "3 hrs ago", c: "blue" },
-                  { t: "New inquiry from Bohol area", time: "Yesterday", c: "amber" },
+                  { t: "New service request from Maria Santos", time: "5 min ago", c: "bg-sky-500" },
+                  { t: "Job REQ-1040 marked as completed", time: "1 hr ago", c: "bg-emerald-500" },
+                  { t: "Customer Anna Reyes updated profile", time: "3 hrs ago", c: "bg-blue-500" },
+                  { t: "New inquiry from Bohol area", time: "Yesterday", c: "bg-amber-500" },
                 ].map((a, i) => (
                   <li key={i} className="flex gap-3">
-                    <span className={`mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full bg-${a.c}-500`} />
+                    <span className={`mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full ${a.c}`} />
                     <div>
                       <p className="text-sm font-medium text-slate-800">{a.t}</p>
                       <p className="text-[11px] text-slate-500">{a.time}</p>
