@@ -5,7 +5,7 @@ import { SectionHeader } from "./SectionHeader";
 
 export function Services() {
   return (
-    <section id="services" className="relative py-20 lg:py-28">
+    <section id="services" className="relative pt-12 pb-20 lg:pt-16">
       <div className="mx-auto max-w-7xl px-5">
         <SectionHeader
           badge="Our Services"
@@ -28,9 +28,7 @@ export function Services() {
               </span>
               <h3 className="relative mt-6 text-lg font-bold text-slate-900">{s.title}</h3>
               <p className="relative mt-2 text-sm leading-relaxed text-slate-600">{s.desc}</p>
-              <div className="relative mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sky-700 opacity-0 transition-opacity group-hover:opacity-100">
-                Learn more <ArrowUpRight className="h-4 w-4" />
-              </div>
+              {/** Learn more removed as requested **/}
             </motion.div>
           ))}
         </div>

@@ -5,7 +5,7 @@ import { GradientButton } from "@/components/ui/GradientButton";
 
 export function ServiceAreas() {
   return (
-    <section id="areas" className="py-20 lg:py-28">
+    <section id="areas" className="pt-12 pb-20 lg:pt-16">
       <div className="mx-auto max-w-7xl px-5">
         <SectionHeader
           badge="Our Service Areas"

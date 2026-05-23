@@ -62,5 +62,4 @@ export const FAQS = [
   { q: "What areas do you currently serve?", a: "We currently serve Tacloban, Iloilo, Bacolod, Quezon City, and Bohol." },
   { q: "How much does siphoning service cost?", a: "Pricing depends on the tank size, location, and service requirements. Contact us for a free estimate." },
   { q: "Do you handle grease trap cleaning?", a: "Yes, we offer professional grease trap cleaning services for residential and commercial establishments." },
-  { q: "Can I schedule an appointment online?", a: "Yes, customers can contact us directly through our website or phone numbers to schedule services." },
 ];

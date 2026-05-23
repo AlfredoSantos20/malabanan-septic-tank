@@ -1,4 +1,4 @@
-import { Droplets, Facebook, Instagram, Twitter, Phone, MapPin } from "lucide-react";
+import { Facebook, Instagram, Twitter, Phone, MapPin } from "lucide-react";
 import { BRAND, NAV_LINKS, AREAS } from "@/data/site";
 
 export function Footer() {
@@ -9,8 +9,8 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-1">
             <div className="flex items-center gap-2.5">
-              <span className="grid h-10 w-10 place-items-center rounded-2xl gradient-primary">
-                <Droplets className="h-5 w-5 text-white" />
+              <span className="grid h-12 w-12 place-items-center">
+                <img src="/assets/malabananlogo.png" alt="Malabanan Logo" className="h-12 w-12 object-contain" />
               </span>
               <span className="text-base font-extrabold text-white">{BRAND.short}</span>
             </div>

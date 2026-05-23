@@ -6,7 +6,7 @@ import { SectionHeader } from "./SectionHeader";
 export function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
   return (
-    <section id="faq" className="py-20 lg:py-28">
+    <section id="faq" className="pt-12 pb-20 lg:pt-16">
       <div className="mx-auto max-w-4xl px-5">
         <SectionHeader
           badge="FAQ"

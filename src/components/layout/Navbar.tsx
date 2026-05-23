@@ -22,8 +22,8 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
         <Link to="/" className="flex items-center gap-2.5">
-          <span className="grid h-10 w-10 place-items-center rounded-2xl gradient-primary shadow-glow">
-            <Droplets className="h-5 w-5 text-white" />
+          <span className="grid h-12 w-12 place-items-center">
+            <img src="/assets/malabananlogo.png" alt="Malabanan Logo" className="h-12 w-12 object-contain" />
           </span>
           <div className="leading-tight">
             <div className="text-sm font-extrabold text-slate-900">{BRAND.short}</div>
@@ -45,9 +45,9 @@ export function Navbar() {
         </ul>
 
         <div className="hidden items-center gap-2 lg:flex">
-          <GradientButton variant="outline" to="/admin/login">
+          {/** <GradientButton variant="outline" to="/admin/login">
             <LayoutDashboard className="h-4 w-4" /> Admin
-          </GradientButton>
+          </GradientButton> **/}
           <GradientButton href={`tel:${BRAND.phones[0]}`}>
             <Phone className="h-4 w-4" /> Call Now
           </GradientButton>
@@ -79,9 +79,9 @@ export function Navbar() {
               ))}
             </ul>
             <div className="mt-3 grid gap-2">
-              <GradientButton variant="outline" to="/admin/login">
+              {/** <GradientButton variant="outline" to="/admin/login">
                 <LayoutDashboard className="h-4 w-4" /> Admin Dashboard
-              </GradientButton>
+              </GradientButton> **/}
               <GradientButton href={`tel:${BRAND.phones[0]}`}>
                 <Phone className="h-4 w-4" /> Call Now
               </GradientButton>
