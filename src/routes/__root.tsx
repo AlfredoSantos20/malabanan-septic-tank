@@ -146,33 +146,48 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: React.ReactNode }) {
   const phoneE164 = `+63${BRAND.phones[0].replace(/^0+/, "")}`;
+  const jsonLd = (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Plumber",
+          name: BRAND.name,
+          url: "https://malabanansiphoningseptictank.com/",
+          logo: "https://malabanansiphoningseptictank.com/assets/malabananlogo.png",
+          image: "https://malabanansiphoningseptictank.com/assets/malabananlogo.png",
+          telephone: phoneE164,
+          areaServed: "Philippines",
+          sameAs: [],
+          openingHours: "Mo-Su 00:00-23:59",
+        }),
+      }}
+    />
+  );
+
+  // In SSR, render full document. In SPA (client), render a fragment.
+  if (typeof document === "undefined") {
+    return (
+      <html lang="en">
+        <head>
+          <HeadContent />
+          {jsonLd}
+        </head>
+        <body>
+          {children}
+          <Scripts />
+        </body>
+      </html>
+    );
+  }
+
   return (
-    <html lang="en">
-      <head>
-        <HeadContent />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Plumber",
-              name: BRAND.name,
-              url: "https://malabanansiphoningseptictank.com/",
-              logo: "https://malabanansiphoningseptictank.com/assets/malabananlogo.png",
-              image: "https://malabanansiphoningseptictank.com/assets/malabananlogo.png",
-              telephone: phoneE164,
-              areaServed: "Philippines",
-              sameAs: [],
-              openingHours: "Mo-Su 00:00-23:59",
-            }),
-          }}
-        />
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
+    <>
+      <HeadContent />
+      {jsonLd}
+      {children}
+    </>
   );
 }
 
