@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { BRAND } from "@/data/site";
 
 function NotFoundComponent() {
   return (
@@ -72,14 +73,37 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Malabanan Siphoning Septic Tank | 24/7 Siphoning Septic Tank Services" },
+      {
+        name: "description",
+        content:
+          "Malabanan Siphoning Septic Tank — 24/7 siphoning septic tank, declogging, and plumbing services. Fast response, expert team, and clean work process.",
+      },
+      {
+        name: "keywords",
+        content:
+          "Malabanan Siphoning Septic Tank, Siphoning Septic Tank, Malabanan, septic tank siphoning, declogging, plumbing services",
+      },
+      { name: "robots", content: "index, follow" },
+      { property: "og:title", content: "Malabanan Siphoning Septic Tank" },
+      {
+        property: "og:description",
+        content:
+          "24/7 siphoning septic tank, declogging, and plumbing services. Call now for fast response and skilled technicians.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { property: "og:url", content: "https://malabanansiphoningseptictank.com/" },
+      { property: "og:site_name", content: "Malabanan Siphoning Septic Tank" },
+      { property: "og:image", content: "https://malabanansiphoningseptictank.com/assets/malabananlogo.png" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Malabanan Siphoning Septic Tank" },
+      {
+        name: "twitter:description",
+        content:
+          "24/7 siphoning septic tank, declogging, and plumbing services. Fast response and expert team.",
+      },
+      { name: "twitter:image", content: "https://malabanansiphoningseptictank.com/assets/malabananlogo.png" },
+      { name: "theme-color", content: "#0ea5e9" },
     ],
     links: [
       {
@@ -95,6 +119,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "apple-touch-icon",
         href: "/assets/malabananlogo.png",
       },
+      {
+        rel: "canonical",
+        href: "https://malabanansiphoningseptictank.com/",
+      },
     ],
   }),
   shellComponent: RootShell,
@@ -104,10 +132,28 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 function RootShell({ children }: { children: React.ReactNode }) {
+  const phoneE164 = `+63${BRAND.phones[0].replace(/^0+/, "")}`;
   return (
     <html lang="en">
       <head>
         <HeadContent />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Plumber",
+              name: BRAND.name,
+              url: "https://malabanansiphoningseptictank.com/",
+              logo: "https://malabanansiphoningseptictank.com/assets/malabananlogo.png",
+              image: "https://malabanansiphoningseptictank.com/assets/malabananlogo.png",
+              telephone: phoneE164,
+              areaServed: "Philippines",
+              sameAs: [],
+              openingHours: "Mo-Su 00:00-23:59",
+            }),
+          }}
+        />
       </head>
       <body>
         {children}
