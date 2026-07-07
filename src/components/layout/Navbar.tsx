@@ -23,7 +23,7 @@ export function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
         <Link to="/" className="flex items-center gap-2.5">
           <span className="grid h-12 w-12 place-items-center">
-            <img src="/assets/malabananlogo.png" alt="Malabanan Logo" className="h-12 w-12 object-contain" />
+            <img src="/assets/malabananlogo.png" alt="Malabanan septic tank siphoning" className="h-12 w-12 object-contain" />
           </span>
           <div className="leading-tight">
             <div className="text-sm font-extrabold text-slate-900">{BRAND.short}</div>

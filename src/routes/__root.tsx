@@ -178,6 +178,20 @@ function RootShell({ children }: { children: React.ReactNode }) {
             {
               "@type": "Plumber",
               name: BRAND.name,
+              description:
+                "Malabanan septic, malabanan siphoning, septic tank, siphoning malabanan, malabanan septic tank, malabanan siphoning septic, malabanan siphoning septic tank, and malabanan siphoninc septic services.",
+              knowsAbout: [
+                "Malabanan",
+                "Septic",
+                "Tank",
+                "Siphoning",
+                "Malabanan Septic",
+                "Malabanan Siphoning",
+                "Septic Tank",
+                "Siphoning Malabanan",
+                "Malabanan Siphoning Septic Tank",
+                "Malabanan Siphoninc Septic",
+              ],
               alternateName: [
                 "Malabanan",
                 "Malabanan Septic",

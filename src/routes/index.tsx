@@ -8,6 +8,7 @@ import { ServiceAreas } from "@/components/sections/ServiceAreas";
 import { Gallery } from "@/components/sections/Gallery";
 import { FAQ } from "@/components/sections/FAQ";
 import { Contact } from "@/components/sections/Contact";
+import { SeoContent } from "@/components/sections/SeoContent";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -34,6 +35,7 @@ function Index() {
       <Navbar />
       <main>
         <Hero />
+        <SeoContent />
         <Services />
         <HowItWorks />
         <ServiceAreas />

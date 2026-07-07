@@ -57,6 +57,8 @@ export const GALLERY = [
 ];
 
 export const FAQS = [
+  { q: "What is malabanan siphoning septic tank service?", a: "Malabanan siphoning septic tank service covers professional septic tank cleaning, siphoning, and full septic system maintenance. Malabanan Siphoning Septic Tank provides malabanan septic, malabanan siphoning, and septic tank solutions 24/7." },
+  { q: "Do you offer malabanan septic and malabanan siphoning?", a: "Yes. We specialize in malabanan septic cleaning, malabanan siphoning, septic tank maintenance, and siphoning malabanan services for homes and businesses." },
   { q: "How often should septic tanks be cleaned?", a: "Septic tanks should generally be cleaned every 3–5 years depending on usage and household size." },
   { q: "Do you offer emergency plumbing services?", a: "Yes, we provide fast-response emergency plumbing and siphoning services in selected service areas." },
   { q: "What areas do you currently serve?", a: "We currently serve Tacloban, Iloilo, Bacolod, Quezon City, and Bohol." },

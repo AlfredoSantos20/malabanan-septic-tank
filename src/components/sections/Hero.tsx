@@ -5,7 +5,7 @@ import { GradientButton } from "@/components/ui/GradientButton";
 import { BRAND } from "@/data/site";
 
 export function Hero() {
-  const fullText = "Malabanan Siphoning & Plumbing Services";
+  const fullText = "Malabanan Siphoning Septic Tank";
   // Initialize with full text so SSR and initial client render match to avoid hydration issues
   const [displayText, setDisplayText] = useState(fullText);
 
@@ -57,7 +57,7 @@ export function Hero() {
           transition={{ duration: 0.7 }}
         >
           <span className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white/70 px-4 py-1.5 text-xs font-semibold text-sky-700 backdrop-blur">
-            <ShieldCheck className="h-3.5 w-3.5" /> Trusted Septic Tank Experts
+            <ShieldCheck className="h-3.5 w-3.5" /> Malabanan · Septic · Tank · Siphoning
           </span>
           <h1 className="mt-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
             <span className="relative inline-block align-top">
@@ -66,7 +66,8 @@ export function Hero() {
             </span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-slate-600">
-            {BRAND.tagline}. Our experienced team is ready 24/7 to keep your home and business flowing smoothly.
+            {BRAND.tagline}. Expert malabanan septic, malabanan siphoning, septic tank, and siphoning
+            malabanan services — available 24/7 for your home and business.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -109,7 +110,7 @@ export function Hero() {
           <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-[2.5rem] shadow-glow">
             <img
               src="/assets/2.jpg"
-              alt="Professional plumbing service"
+              alt="Malabanan siphoning septic tank service"
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-700/40 via-transparent to-transparent" />

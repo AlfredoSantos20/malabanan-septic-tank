@@ -10,12 +10,13 @@ export function Footer() {
           <div className="md:col-span-1">
             <div className="flex items-center gap-2.5">
               <span className="grid h-12 w-12 place-items-center">
-                <img src="/assets/malabananlogo.png" alt="Malabanan Logo" className="h-12 w-12 object-contain" />
+                <img src="/assets/malabananlogo.png" alt="Malabanan siphoning septic tank logo" className="h-12 w-12 object-contain" />
               </span>
               <span className="text-base font-extrabold text-white">{BRAND.short}</span>
             </div>
             <p className="mt-4 text-sm text-slate-400">
-              Trusted septic tank siphoning and plumbing experts serving communities nationwide.
+              Malabanan septic, malabanan siphoning, septic tank, and siphoning malabanan experts.
+              Full malabanan siphoning septic tank service nationwide.
             </p>
             <div className="mt-5 flex gap-2">
               {[Facebook, Instagram, Twitter].map((I, i) => (
