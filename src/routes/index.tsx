@@ -13,8 +13,17 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Malabanan Siphoning Septic Tank — Professional Plumbing Services" },
-      { name: "description", content: "Fast, reliable, and affordable septic tank cleaning, siphoning, declogging, and plumbing services across Tacloban, Iloilo, Bacolod, Quezon City, and Bohol." },
+      { title: "Malabanan Siphoning Septic Tank | Malabanan Septic | Septic Tank Siphoning" },
+      {
+        name: "description",
+        content:
+          "Malabanan — septic, tank, and siphoning services. Malabanan septic, malabanan siphoning, septic tank, siphoning malabanan, malabanan septic tank, malabanan siphoning septic tank. 24/7 declogging and plumbing in Tacloban, Iloilo, Bacolod, Quezon City, and Bohol.",
+      },
+      {
+        name: "keywords",
+        content:
+          "malabanan, septic, tank, siphoning, malabanan septic, malabanan siphoning, septic tank, siphoning malabanan, malabanan tank, malabanan septic tank, malabanan siphoning septic, malabanan siphoning septic tank, malabanan siphoninc septic, septic siphoning, siphoning septic, siphoning septic tank, septic tank siphoning, malabanan siphoning tank, malabanan septic siphoning, malabanan plumbing, malabanan declogging, septic tank cleaning, septic tank cleaning malabanan, malabanan siphoning services, siphoning services, septic services",
+      },
     ],
   }),
 });
